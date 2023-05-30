@@ -1,0 +1,50 @@
+.card {
+  width: 12rem;
+  max-height: 25rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: rgb(147, 68, 193);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 5px 10px 0px;
+  border: 2px solid;
+}
+.poster img {
+  max-width: 15rem;
+  max-height: 20rem;
+}
+.info {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.overview {
+  transform: translateY(100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(67, 56, 111, 0.7);
+  color: rgb(248, 249, 251);
+  padding: 1rem;
+  overflow: auto;
+  padding-top: 12rem;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  height: 25rem;
+  cursor: pointer;
+}
+
+.card:hover .overview {
+  transform: translateY(0%);
+}
+.info-overview {
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+  color: aliceblue;
+  cursor: inherit;
+}
